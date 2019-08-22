@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="156" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="ListDetailsAppWithTableViewAndScrollViewAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="158.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl_img" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-Am-8g8">
+                        <rect key="frame" x="16" y="16" width="204.5" height="123"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aqh-Am-8g8" secondAttribute="height" multiplier="2:1.2" id="VHc-ew-I59"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victor Vescovo , Devid Biello" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY4-g3-bWA">
+                        <rect key="frame" x="236.5" y="16" width="196.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="What's at the bottom of the ocean -- and how we're getting there" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHv-a0-IPb">
+                        <rect key="frame" x="236.5" y="36.5" width="196.5" height="61"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="JHv-a0-IPb" firstAttribute="leading" secondItem="aqh-Am-8g8" secondAttribute="trailing" constant="16" id="0Ai-fA-OFZ"/>
+                    <constraint firstAttribute="bottom" secondItem="aqh-Am-8g8" secondAttribute="bottom" constant="16" id="8sm-My-amo"/>
+                    <constraint firstAttribute="trailing" secondItem="lY4-g3-bWA" secondAttribute="trailing" constant="16" id="OI7-x7-XHy"/>
+                    <constraint firstAttribute="trailing" secondItem="JHv-a0-IPb" secondAttribute="trailing" constant="16" id="QHB-3e-ir5"/>
+                    <constraint firstItem="aqh-Am-8g8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UaN-b7-OQR"/>
+                    <constraint firstItem="aqh-Am-8g8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="cgS-9I-NFa"/>
+                    <constraint firstItem="lY4-g3-bWA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="doY-kW-YfA"/>
+                    <constraint firstItem="JHv-a0-IPb" firstAttribute="top" secondItem="lY4-g3-bWA" secondAttribute="bottom" id="hKF-hr-4jc"/>
+                    <constraint firstItem="aqh-Am-8g8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="iAB-kf-hhw"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JHv-a0-IPb" secondAttribute="bottom" constant="16" id="n2z-be-NHn"/>
+                    <constraint firstItem="lY4-g3-bWA" firstAttribute="leading" secondItem="aqh-Am-8g8" secondAttribute="trailing" constant="16" id="sJ6-pq-WD1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="aqh-Am-8g8" id="6oL-Vx-f6P"/>
+                <outlet property="lblDescription" destination="JHv-a0-IPb" id="S6q-29-HuN"/>
+                <outlet property="lblName" destination="lY4-g3-bWA" id="lxe-FT-efN"/>
+            </connections>
+            <point key="canvasLocation" x="231.15942028985509" y="190.17857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="girl_img" width="274" height="184"/>
+    </resources>
+</document>
