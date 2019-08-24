@@ -21,6 +21,7 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl_img" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-Am-8g8">
                         <rect key="frame" x="16" y="16" width="204.5" height="123"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="aqh-Am-8g8" secondAttribute="height" multiplier="2:1.2" id="VHc-ew-I59"/>
                         </constraints>
@@ -37,11 +38,31 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yol-oC-vrU">
+                        <rect key="frame" x="180.5" y="119" width="35" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZA-Za-dUz">
+                                <rect key="frame" x="9.5" y="3" width="16.5" height="8.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="6vY-4v-Mfe"/>
+                            <constraint firstAttribute="width" constant="35" id="IT2-gH-Nbp"/>
+                            <constraint firstItem="zZA-Za-dUz" firstAttribute="centerY" secondItem="Yol-oC-vrU" secondAttribute="centerY" id="Vka-d2-SDh"/>
+                            <constraint firstItem="zZA-Za-dUz" firstAttribute="centerX" secondItem="Yol-oC-vrU" secondAttribute="centerX" id="qR4-oG-ifR"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="JHv-a0-IPb" firstAttribute="leading" secondItem="aqh-Am-8g8" secondAttribute="trailing" constant="16" id="0Ai-fA-OFZ"/>
                     <constraint firstAttribute="bottom" secondItem="aqh-Am-8g8" secondAttribute="bottom" constant="16" id="8sm-My-amo"/>
+                    <constraint firstItem="aqh-Am-8g8" firstAttribute="trailing" secondItem="Yol-oC-vrU" secondAttribute="trailing" constant="5" id="CFA-Uy-lzN"/>
+                    <constraint firstItem="aqh-Am-8g8" firstAttribute="bottom" secondItem="Yol-oC-vrU" secondAttribute="bottom" constant="5" id="D6y-Gp-rB1"/>
                     <constraint firstAttribute="trailing" secondItem="lY4-g3-bWA" secondAttribute="trailing" constant="16" id="OI7-x7-XHy"/>
                     <constraint firstAttribute="trailing" secondItem="JHv-a0-IPb" secondAttribute="trailing" constant="16" id="QHB-3e-ir5"/>
                     <constraint firstItem="aqh-Am-8g8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UaN-b7-OQR"/>
@@ -58,8 +79,9 @@
                 <outlet property="imgView" destination="aqh-Am-8g8" id="6oL-Vx-f6P"/>
                 <outlet property="lblDescription" destination="JHv-a0-IPb" id="S6q-29-HuN"/>
                 <outlet property="lblName" destination="lY4-g3-bWA" id="lxe-FT-efN"/>
+                <outlet property="timeView" destination="Yol-oC-vrU" id="cej-IW-rHB"/>
             </connections>
-            <point key="canvasLocation" x="231.15942028985509" y="190.17857142857142"/>
+            <point key="canvasLocation" x="231.15942028985509" y="189.84375"/>
         </tableViewCell>
     </objects>
     <resources>

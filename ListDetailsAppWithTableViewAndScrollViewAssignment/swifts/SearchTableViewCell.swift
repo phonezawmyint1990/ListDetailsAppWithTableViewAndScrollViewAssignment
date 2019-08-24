@@ -13,6 +13,7 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var timeView: UIView!
     
     
     var mData: User! {
@@ -28,6 +29,7 @@ class SearchTableViewCell: UITableViewCell {
         // Initialization code
         selectionStyle = .none
         imgView.layer.cornerRadius = 5
+        timeView.layer.cornerRadius = 3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
